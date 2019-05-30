@@ -1,4 +1,5 @@
 import discord
+import os
 
 
 client = discord.Client()
@@ -69,4 +70,5 @@ async def on_raw_reaction_remove(payload):
             print("Role not found.")
 
 
-client.run("NTgxODM0NjY3ODg4NDc2MTYw.XOlUuw.yKlYuLQsV-cyoPpDSkg4087o6Dw")
+access_token = os.environ["BOT_TOKEN"]
+client.run("access_token")
